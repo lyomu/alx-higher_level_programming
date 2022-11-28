@@ -1,8 +1,3 @@
 #!/usr/bin/node
-const myObject = {
-  type: 'object',
-  value: 12
-};
-console.log(myObject);
-myObject.value = 89;
-console.log(myObject);
+const count = process.argv.length;
+console.log(count === 2 ? 'No argument' : count === 3 ? 'Argument found' : 'Arguments found');
