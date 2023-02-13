@@ -1,3 +1,3 @@
 #!/bin/bash
-# Follows a URL for it to respond with "You got me!"
-curl -s -X PUT -H 'Origin: HolbertonSchool' -L --max-redirs -1 -d "user_id=98" "0.0.0.0:5000/catch_me"
+# script that was a fun effort in breaking to http protocols on holberton servers
+curl -s -L -X PUT -d "user_id=98" -H "Origin: HolbertonSchool" 0.0.0.0:5000/catch_me
